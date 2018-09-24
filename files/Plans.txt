@@ -1,0 +1,18 @@
+to do:
+1. character movement (3 lanes)
+2. add surroundings
+3. add obstacles 
+4. add items
+5. add score
+6. add vocals
+
+extra's:
+enemies (the guy who stole my soap)
+end boss
+
+
+in process:
+one page
+
+
+done: 
