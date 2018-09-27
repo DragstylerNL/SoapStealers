@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PL_MovementSystem : MonoBehaviour {
 
+    private int lanePos = 1;
+    private bool leftButon = false, rightButton = false;
+    
+
 	// Use this for initialization
 	void Start () {
 		
