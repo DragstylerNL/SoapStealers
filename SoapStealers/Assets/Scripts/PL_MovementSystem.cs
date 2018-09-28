@@ -4,17 +4,29 @@ using UnityEngine;
 
 public class PL_MovementSystem : MonoBehaviour {
 
-    private int lanePos = 1;
-    private bool leftButon = false, rightButton = false;
+    [SerializeField]
+    private int lanePos = 1, lastLanePos = 1;
+    private bool leftButton = false, rightButton = false;
+
+    private Transform pl_pos;
+
+    public float distance = 5f;
+
     
 
-	// Use this for initialization
 	void Start () {
-		
+        pl_pos = GetComponent<Transform>();
 	}
 	
-	// Update is called once per frame
 	void Update () {
-		
-	}
+
+        //get input for left/right movement
+        leftButton = Input.GetButtonDown("LeftButton");
+        rightButton = Input.GetButtonDown("RightButton");
+        //change position acording to input //then actually move there
+        if (leftButton && lanePos != 0) { lanePos--; } 
+        if (rightButton && lanePos != 2) { lanePos++; } 
+
+
+    }
 }
