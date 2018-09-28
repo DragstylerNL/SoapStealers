@@ -24,9 +24,14 @@ public class PL_MovementSystem : MonoBehaviour {
         leftButton = Input.GetButtonDown("LeftButton");
         rightButton = Input.GetButtonDown("RightButton");
         //change position acording to input //then actually move there
-        if (leftButton && lanePos != 0) { lanePos--; } 
-        if (rightButton && lanePos != 2) { lanePos++; } 
+        if (leftButton && lanePos != 0) { lanePos--; ChangePos(-1); } 
+        if (rightButton && lanePos != 2) { lanePos++; ChangePos(1); } 
 
 
+    }
+
+    private void ChangePos(int direction)
+    {
+        //if (direction == 1) { pl_pos.position.x }
     }
 }
