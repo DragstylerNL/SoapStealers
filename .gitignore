@@ -1,9 +1,9 @@
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-Assets/AssetStoreTools*
+SoapStealers/[Ll]ibrary/
+SoapStealers/[Tt]emp/
+SoapStealers/[Oo]bj/
+SoapStealers/[Bb]uild/
+SoapStealers/[Bb]uilds/
+SoapStealers/Assets/AssetStoreTools*
 
 # Visual Studio cache directory
 .vs/
