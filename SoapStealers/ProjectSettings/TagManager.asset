@@ -7,6 +7,9 @@ TagManager:
   - Chunk
   - ChunkController
   - Enemy
+  - death
+  - Death
+  - Score
   layers:
   - Default
   - TransparentFX

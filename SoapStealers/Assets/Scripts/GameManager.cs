@@ -1,16 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    private Text text;
 
-    void Die()
+    private int score = 0;
+
+    void Start()
     {
-        GameObject.FindGameObjectWithTag("Death").transform.position = new Vector3(0, 0, 0);
+        text = GameObject.FindGameObjectWithTag("Score").GetComponent<Text>();
+    }
+
+    public void AddScore(int add)
+    {
+        score += add;
+        text.text = "Score: " + score;
+    }
+
+    public void Die()
+    {
+        GameObject.FindGameObjectWithTag("Death").GetComponent<RectTransform>().position = new Vector3(960, 540, 0);
     }
 }
