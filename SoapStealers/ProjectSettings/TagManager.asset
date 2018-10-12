@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Chunk
   - ChunkController
+  - Enemy
   layers:
   - Default
   - TransparentFX
